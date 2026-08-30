@@ -23,7 +23,7 @@ public class LionDoesHaveManeParametersTest {
     @Mock
     FelineBehavior felineBehavior;
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "sex={0}, expectedHasMane={1}")
     public static Object[][] enterData() {
         return new Object[][]{
                 // sex, expectedHasMane

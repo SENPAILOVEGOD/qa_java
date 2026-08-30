@@ -16,7 +16,7 @@ public class FelineKittensCountParametersTest {
         this.expectedKittens = expectedKittens;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "kittensCount={0}, expectedKittens={1}")
     public static Object[][] enterData() {
         return new Object[][]{
                 {1, 1},
